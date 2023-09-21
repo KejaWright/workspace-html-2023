@@ -14,10 +14,13 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<!--- We will learn later -->
+	<meta name="copyright" content="&copy;W3C"/>,<meta name="description" content="......."/>
 </head>
 
 <body>
-	<div id="side"> </div>
+	<div id="side"> 
+		<iframe src="HTMLelements.html" frameborder="0" height="100%"></iframe>
+	</div>
 	<div class="practicearea">
 		<div class="practice">
 			<h2>August 30 practice</h2>
@@ -28,17 +31,194 @@
 
 
 		<div class="practice">
-
+			<ol>
+				<li> Inline element 
+				<ul>
+					<li> &lt; img &gt; </li>
+					<li> &lt; br &gt; </li>
+					<li> &lt; strong &gt; </li>
+				</ul>
+				</li>
+				<li> Blocklevel element
+				<ul>
+					<li>
+						&lt;ol&gt;
+					</li>
+					<li>
+						&lt;li&gt;
+					</li>
+					<li>
+						&lt;p&gt;
+					</li>
+				</ul>
+				</li>
+				
+			</ol>
 		</div>
 
 
 		<div class="practice">
-
+			<ul>
+				<li>
+					<a href="https://blackboard.sc.edu/ultra/course">BlackBoard</a>
+				</li>
+				<li>
+					<a href="/doc/imageMap.html">imageMap</a>
+				</li>
+				<li>
+					<a href="https://www.eurozine.com/wp-content/uploads/2017/11/Eurozine-TV-set.jpg">Eurozine-TV-set&copy;
+						<img src="img/Eurozine-TV-set.jpg" alt="Eurozine-TV-set"/>
+					</a>
+				</li>
+			</ul>
 
 		</div>
 
 		<div class="practice">
+			<h1> September 13</h1>
+			<table border="1">
+				<tr>
+					<td rowspan="2">1</td>
+					<td>11</td>
+					<td>111</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>33</td>	
+					<td>333</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>44</td>
+					<td>444</td>
+				</tr>
+			</table>
 
+
+		</div>
+		
+		<div class="practice">
+			<h1> Required in class excersize</h1>
+			<table border="1">
+				<tr>
+					<td colspan ="4"> Temperature Distribution in Jan- Apr 2015(F)</td>
+				</tr>
+				<tr>
+					<td>Month</td>
+					<td>High</td>
+					<td>Low</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td>January</td>
+					<td>48</td>
+					<td>36</td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>February</td>
+					<td>49</td>
+					<td>37</td>	
+					<td rowspan="2">43</td>
+				</tr>
+				<tr>
+					<td>March</td>
+					<td>52</td>
+					<td>39</td>
+				</tr>
+				<tr>
+					<td>April</td>
+					<td>58</td>
+					<td>43</td>
+					<td>47</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="practice">
+			<h2>Form Practice</h2>
+			<form action="">
+				<p>
+					name: <input type="text" name="fullname">
+				</p>
+				<p>
+					password: <input type="password" name="pwd">
+				</p>
+				<p>
+				email: <input type="email" name="email">
+				</p>
+				<p>
+					what are your favorite colors?
+					<input type="checkbox" name="colors" value="red" >red
+					<input type="checkbox" name="colors" value="blue">blue
+					<input type="checkbox" name="colors" value="yellow">yellow
+					
+
+
+				</p>
+				<p>
+					<input type="submit" value="Click to submit">
+				</p>
+			</form>
+
+		</div>
+		<div class="practice">
+			<h1>Sept 18, 2023</h1>
+			<h2>Form Practice - more</h2>
+			
+			<form action="">
+				<fieldset> <legend>How does it look</legend>
+					<p>Please input the genre you prefer: </p>
+					<p> <input type="radio" name="genre" value="rock"> Rock </p>
+					<p> <input type="radio" name="genre" value="pop"> Pop </p>
+					<P> <input type="radio" name="genre" value="alternative"> Alternative </P>
+					<p> <input type="submit" value="click to submit"></p>
+					<p> <input type="reset" value="clear the form"></p>
+					<p> Please enter your feedback</p>
+					<textarea name="feedback" cols="30" rows="10"> No comment</textarea>
+					<p> Selct your fav browser
+						<select size="4" name="browser" multiple>
+							<option value="firefox">Firefox</option>
+							<option value="chrome">Chrome</option>
+							<option value="Opera GX">Opera GX</option>
+							<option>Safari</option>
+							<option value="ie">Edge</option>
+							<p> HTML 5 FEATURES
+								<input type="color" name="color">
+								<input type="date" name="date">
+								<input type="datetime" name="datetime">
+							</p>
+							<p> <input type="submit" value="click to submit"></p>
+							<p>image button for fun
+								<input type="image" src="img/subscribe.jpg">
+								<button> <img src="img/add.gif" alt="add">Add</button>
+							</p>
+						</select>
+					
+					</p>
+				</fieldset>
+
+				
+			</form>
+		</div>
+		<div class="practice">
+			<h1> Sept 20 --HTML 5 features</h1>
+			<h2>Form practice</h2>
+			<form action="">
+				<p>Email: <input type="email" placeholder="xxxx@xxxx.com" name="email" required autofocus></p>
+				<p>Tel: <input type="tel" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}" required></p>
+				<p>Rating <input type="number" name="rating" min="0" max="5"></p>
+				<p>Favorite Scores: 0<input type="range" name="score" min="0" max="10">10</p>
+				<p><input type="submit" value="submit"formnovalidate></p>
+			</form>
+			<p>video</p>
+			<iframe src="https://www.youtube.com/embed/wyWuKGr_XUc?si=x5V39iVLe3Cy_Tcu" frameborder="0" preload controls loop></iframe>
+			<p>map</p>
+			<iframe width="600" height="450" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d359.1449937511332!2d-106.68457554069151!3d35.08436517539732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695229220300!5m2!1sen!2sus" frameborder="0"></iframe>
 
 		</div>
 
